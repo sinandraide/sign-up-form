@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/general.css" />
 
     <link rel="stylesheet" href="styles/container-style.css" />
+    <script src="script/script.js" defer></script>
   </head>
   <body>
     <container class="master-container">
@@ -32,38 +33,54 @@
           <p class="warning">Let's do this!</p>
           <form action="#">
             <label for="first_name"
-              >First Name
-              <input type="text" name="first_name" id="first_name" />
+              >First Name *
+              <input
+                type="text"
+                name="first_name"
+                id="first_name"
+                required
+                title="Only letters with max 30 characters"
+                pattern="^[a-zA-Z\s]{0,30}$"
+              />
             </label>
 
             <label for="last_name"
-              >Last Name
-              <input type="text" id="last_name" name="last_name" />
+              >Last Name *
+              <input
+                type="text"
+                id="last_name"
+                name="last_name"
+                required
+                title="Only letters with max 30 characters"
+                pattern="[a-z]{1,30}"
+              />
             </label>
 
-            <label for="last_name"
-              >Last Name
-              <input type="text" id="last_name" name="last_name" />
+            <label for="email"
+              >Email *
+              <input type="email" id="email" name="email" required />
             </label>
 
-            <label for="last_name"
-              >Last Name
-              <input type="text" id="last_name" name="last_name" />
+            <label for="phone_number"
+              >Phone Number
+              <input type="text" id="phone_number" name="last_name" />
             </label>
 
-            <label for="last_name"
-              >Last Name
-              <input type="text" id="last_name" name="last_name" />
+            <label for="password">
+              Password *
+              <input type="text" id="password" name="last_name" required />
             </label>
 
-            <label for="last_name"
-              >Last Name
-              <input type="text" id="last_name" name="last_name" />
+            <label for="conf_password"
+              >Confirm Password *
+              <input type="text" id="conf_password" name="last_name" required />
             </label>
 
             <div class="confirm-container">
-              <button></button>
-              Already Have an account? Log in!
+              <button>Submit</button>
+              <p style="cursor: pointer">
+                Already have an account? <u>Log in!</u>
+              </p>
             </div>
           </form>
         </div>
