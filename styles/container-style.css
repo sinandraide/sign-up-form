@@ -113,7 +113,7 @@ form {
   animation-name: animate-fade;
   animation-timing-function: ease;
   flex-wrap: wrap;
-  gap: 20px 0;
+  gap: 10px 0;
   border-radius: 5px;
   box-shadow: 3px 7px 10px rgba(0, 0, 0, 0.3);
   border: 4px solid rgb(140, 171, 214);
@@ -133,7 +133,7 @@ input {
   background-color: rgb(140, 171, 214);
   color: white;
   font-size: 1.2rem;
-  margin-top: 5px;
+  margin-top: 1px;
   transition: background-color 1s;
 }
 
@@ -189,6 +189,11 @@ button:active {
     box-shadow: 0px 12px 10px rgba(0, 0, 0, 0.5);
   }
 
+  .right-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
   .right-container > * {
     flex-shrink: 1;
     flex-grow: 0;
@@ -201,9 +206,16 @@ button:active {
 
   .content-container {
     padding: 0;
+    width: 470px;
   }
   .warning {
     max-width: min(470px, 60vw);
     min-width: 470px;
+  }
+}
+
+@media (min-width: 1201) and (max-width: 1800) {
+  form {
+    height: 35555vh;
   }
 }
