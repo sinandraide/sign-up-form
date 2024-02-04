@@ -213,9 +213,3 @@ button:active {
     min-width: 470px;
   }
 }
-
-@media (min-width: 1201) and (max-width: 1800) {
-  form {
-    height: 35555vh;
-  }
-}
